@@ -1,0 +1,75 @@
+{
+    "smartphone":[
+        {
+            "id": 1,
+            "nama_produk": "Oppo Reno5" ,
+            "harga": 5699000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2020/12/Harga-hp-Oppo-Reno5-Pro-5G-600x600.jpg",
+            "stok": "2"
+        },
+        {
+            "id": 2,
+            "nama_produk": "Oppo A15s",
+            "harga": 2299000,
+            "gambar":"https://www.hallogsm.com/wp-content/uploads/2020/12/Oppo-A15s-600x600.jpg" ,
+            "stok": "3"
+        },
+        {
+            "id": 3,
+            "nama_produk": "Oppo Reno4",
+            "harga": 4149000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2020/06/Oppo-Reno-4-5G-600x600.jpg",
+            "stok": "4"
+        },
+        {
+            "id": 4,
+            "nama_produk": "Xiaomi Note 9" ,
+            "harga": 2497000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2020/03/Xiaomi-Redmi-Note-9-600x600.jpg",
+            "stok": "5" 
+        },
+        {
+            "id": 5,
+            "nama_produk": "Samsung Galaxi M31",
+            "harga": 3399000,
+            "gambar": "https://gizmologi.id/wp-content/uploads/2020/05/galaxy_m31_aps-600x600.jpg",
+            "stok": "2" 
+        },
+        {
+            "id": 6,
+            "nama_produk": "Infinix Hot 9 play",
+            "harga": 1492000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2020/06/Harga-Infinix-Hot-9-600x600.jpg",
+            "stok": "3" 
+        },
+        {
+            "id": 7,
+            "nama_produk": "Samsung Galaxi A10s",
+            "harga": 1326000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2021/02/Samsung-Galaxy-A10s-2020-600x600.jpg",
+            "stok": "3" 
+        },
+        {
+            "id": 8,
+            "nama_produk": "iphone 11",
+            "harga": 12335000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2019/09/Harga-Apple-iPhone-11-di-Indonesia-600x600.jpg",
+            "stok": "5" 
+        },
+        {
+            "id": 9,
+            "nama_produk": "Nokia C1",
+            "harga": 740000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2019/12/Nokia-C1-600x600.jpg",
+            "stok": "4" 
+        },
+        {
+            "id": 10,
+            "nama_produk": "Samsung S20 plus",
+            "harga": 9600000,
+            "gambar": "https://www.hallogsm.com/wp-content/uploads/2020/06/Samsung-Galaxy-S20-1-600x600.jpg",
+            "stok": "3" 
+        }
+        
+    ]
+} 

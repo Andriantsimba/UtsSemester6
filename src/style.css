@@ -1,0 +1,152 @@
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+  }
+  ul.header {
+    background-color: rgb(224, 159, 19);
+    padding: 0;
+  }
+  ul.header li a {
+    color: rgb(255, 253, 253);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 22px;
+    display: inline-flex;
+    position: relative;
+    justify-content: space-between;  }
+
+  .product{
+
+    height: 130pt;
+    width: initial;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid burlywood;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    /* align-items: center; */
+  }
+  .image-prod{
+    height: 150px;
+    width: 120px;
+    margin-right: 20px;
+    vertical-align: top;
+    border-radius: 5pt;
+    border: 2px solid;
+    border-color: dodgerblue;
+    position: static;
+  }
+
+  .image-prod img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ribet{
+    display: flex;
+    border: 2pt solid dodgerblue;
+    border-radius: 5pt;
+    width: 500pt;
+    justify-content: center;
+    margin-left: 20pt;
+    /* object-fit: cover; */
+  }
+
+  .content{
+    margin-left: 0pt;
+    padding-top: 10pt;
+    /* border: dotted; */
+    width: 300pt;
+    vertical-align: top;
+  }
+
+  .content1{
+    /* margin-left: 50pt; */
+    margin-top: 10pt;
+    /* border: dotted; */
+    padding-top: 10pt;
+    vertical-align: bottom;
+
+  }
+
+  .belibtn{
+    width: 60pt;
+    height: 30pt;
+    border: thin;
+    border-radius: 5pt;
+    background: rgb(38, 187, 233);
+    font-weight: bold;
+  }
+  .image{
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+    vertical-align: top;
+  }
+  .image img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    
+  }
+  .main{
+    height: auto;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid burlywood;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    border: outset;
+  }
+  .content2{
+    margin-left: 20px;
+    font-family: fantasy;
+    
+  }
+
+  .table {
+    /* display: table; */
+    justify-content: center;
+    border: 1px solid gray;
+    text-align: center;
+  }
+  .td {
+    border: 1px solid gray;
+    width: 30em;
+  }
+  .container{
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    border: outset;
+  }
+
+  .homeContainer{
+    justify-self: center;
+    justify-content: center;
+    /* align-self: center; */
+    align-items: center;
+    border: outset;
+    display: grid;
+  }
+  .head{
+    margin-left: 20pt;
+    color: rgb(204, 136, 18);
+    /* align-self: center; */
+    /* justify-self: center; */
+  }
+
+  .body{
+    margin-left: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+  }
