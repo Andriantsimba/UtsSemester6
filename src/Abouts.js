@@ -14,6 +14,7 @@ const Abouts = () => {
                 <p>Nim: 1841720220</p>
                 <p>Class: TI - 3G</p>
                 <p>Origin: Madagascar</p>
+                <p>Address: Jl. Kesumba Dalama no.15</p>
             </div>
             
         </div>

@@ -53,7 +53,7 @@ function Home(){
   return(
     <div className="homeContainer">
       <h2 className="head">Welcome to our Shop *~* </h2>
-      <p className="body">Get your dreamed HandPhone from our shop, <br/>
+      <p className="body">Get your dreamed Scd ..martphone from our shop, <br/>
           You are always welcomed into our shop.
       </p>
     </div>

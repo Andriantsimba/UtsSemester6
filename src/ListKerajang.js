@@ -2,41 +2,64 @@ import React, {Component} from 'react'
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+var total, subtotal,no,qtt;
 class ListProducts extends Component{
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: [],
-      isloaded: false,
+  state = {
+      kerajang: [],
     }
+  
+  getData = () => {
+    fetch('http://localhost:3002/kerajang')
+    .then(res=>res.json())
+    .then(jsonResultApi=>{
+      this.setState({
+        kerajang: jsonResultApi,
+      })
+    });
   }
     
       componentDidMount() {
-        fetch('http://localhost:3002/kerajang')
-                .then(res=>res.json())
-                .then(jsonResultApi=>{
-                  this.setState({
-                    isloaded: true,
-                    items: jsonResultApi,
-                  })
-                });
+       this.getData();
       }
 
-      render(){
-
-        var {isloaded, items} = this.state;
-        var totalprice = 0;
+      listItem(){
         var CurrencyFormat = require('react-currency-format');
-
-        if (!isloaded){
-          return <div>Loading ...</div>
-        }else{
+        total = 0;
+        subtotal = 0;
+        no = 0;
+        qtt =1;
+        return this.state.kerajang.map((kerajang) => {
+          subtotal = kerajang.harga;
+          total = total + kerajang.harga;
+          no +=1;
+          qtt =1;
           return(
-           
+            <tr key={kerajang.id}>
+              <td>{no}</td>
+              <td>{kerajang.id}</td>
+              <td>{kerajang.nama}</td>
+              <td><CurrencyFormat value={kerajang.harga} displayType={'text'} 
+                            thousandSeparator={true} prefix='RP' /></td>
+              <td>{qtt}</td>
+              <td><CurrencyFormat value={subtotal} displayType={'text'} 
+                            thousandSeparator={true} prefix='RP' /></td>
+            </tr>
+          );
+        });
+      }
+
+      clearbtn = (data) =>{
+        fetch(`http://localhost:3002/kerajang/${data}`,{
+          method: "DELETE",
+      });
+    }
+      render(){
+        var CurrencyFormat = require('react-currency-format');
+          return(
+            
             <div className="container" >
-            <h3>All product</h3>
+            <h3>Purchased Product</h3>
             <table className="table">
               <thead>
                         <th>NO.</th>
@@ -47,36 +70,20 @@ class ListProducts extends Component{
                         <th>Subtotal</th>
               </thead>
               <tbody>
-               
-                  {items.map(item =>(
-
-                      <tr key={item.id}>
-                          <td>{item.id}</td>
-                          <td>{item.id}</td>
-                          <td>{item.nama_produk}</td>
-                          <td><CurrencyFormat value={item.harga} displayType={'text'} 
-                                thousandSeparator={true} prefix='RP' /></td>
-                          <td>{item.qtt} </td>
-                          <td><CurrencyFormat value={item.harga*item.qtt} displayType={'text'} 
-                                thousandSeparator={true} prefix='RP' /> </td>
-                      </tr>
-                  ))}
-                  {items.map(item => 
-                  {for (let index = 0; index < item.length; index++) {
-                    const item1 = item[index];
-                    totalprice += item1.qtt*item1.harga;
-                    return <tr key={item.id} >
-                      <td colSpan="5" >Total</td>
-                      <td> totalprice </td>
-                    </tr>
-                  }}  
-                    )}
+               {this.listItem()}   
               </tbody>
+              <tfoot>
+                <td colSpan="5" >
+                  Total
+                </td>
+                <td><CurrencyFormat value={total} displayType={'text'} 
+                            thousandSeparator={true} prefix='RP' /></td>
+              </tfoot>
             </table>
             </div>
           )
         }
-    }
+    
 }
 
 export default ListProducts;

@@ -1,16 +1,5 @@
 {
-    "kerajang": [
-        {
-            "id": 1,
-            "nama_produk": "Oppo Reno5" ,
-            "harga": 5699000,
-            "qtt": 2
-        },
-        {
-            "id": 2,
-            "nama_produk": "Oppo A15s",
-            "harga": 2299000,
-            "qtt": 1
-        }
-    ]
+  "kerajang": [
+    
+  ]
 }
